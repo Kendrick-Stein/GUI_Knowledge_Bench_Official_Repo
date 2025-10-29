@@ -1,0 +1,33 @@
+KnowledgeBenchDir: '../KnowledgeBench'
+ModelName: 'qwen2.5-vl-72b-instruct'
+Engine: 'qwen' # service provider
+ResultsDir: '../FINAL_RESULT/InstructionUnderstanding/noKnowledge' # dir to save the results
+
+# InstructionUnderstanding
+
+
+thinking: true # enable thikning or not
+MaxWorker: 20 # max concurrent works for 
+
+kwargs:
+  max_tokens: 2048
+  frequency_penalty: 1
+  temperature: 0.0
+  top_p: 0.9
+
+
+ablation_options:
+  visual_prompt: true
+  knowledge_prompt: false
+
+TestingScope: # the testing scope of knowledge
+  InterfacePerception:
+    StateInformationUnderstanding: true
+    LayoutSemanticsUnderstanding: true
+    WidgetFunctionUnderstanding: true
+  InteractionPrediction:
+    ActionPrediction: true
+    ActionEffect: true
+  InstructionUnderstanding: 
+    GoalInterpretation: true
+    TaskPlanning: true

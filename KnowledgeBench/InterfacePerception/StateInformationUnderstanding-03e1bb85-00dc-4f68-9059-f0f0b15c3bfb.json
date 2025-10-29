@@ -1,0 +1,58 @@
+{
+    "question_id": "StateInformationUnderstanding-03e1bb85-00dc-4f68-9059-f0f0b15c3bfb",
+    "knowledge": {
+        "knowledge_type": "InterfacePerception",
+        "knowledge_sub_type": "StateInformationUnderstanding"
+    },
+    "question_type": "yes_or_no",
+    "question_text": "Do the third and fourth icons from the left in the bottom bar both display unread indicators?",
+    "question_image_dir_list": [
+        "StateInformationUnderstanding-03e1bb85-00dc-4f68-9059-f0f0b15c3bfb_question_0.png"
+    ],
+    "option_text": [
+        "Yes",
+        "No",
+        "Unknown"
+    ],
+    "app_type": "Android Home Screen",
+    "os_type": "Android",
+    "needed_knowledge": "On Android home screens, a small dot badge on an app icon indicates an unread notification and appears on dock icons as well. Count the dock icons from left to identify the third and fourth icons and check whether both have these dots.",
+    "annotation": {
+        "bbox": [
+            552,
+            1828,
+            1017,
+            2085
+        ]
+    },
+    "augmented_question": "Do both icons inside the red bounding box on the bottom bar show unread indicators?",
+    "groundtruth": "yes",
+    "messages": [
+        {
+            "role": "system",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "You are a Graphical User Interface (GUI) agent. You will be given a screenshot, a question, and corresponding options. You need to choose one option as your answer.\n"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "image",
+                    "image_url": "StateInformationUnderstanding-03e1bb85-00dc-4f68-9059-f0f0b15c3bfb.png"
+                },
+                {
+                    "type": "text",
+                    "text": "Do both icons inside the red bounding box on the bottom bar show unread indicators? \n"
+                },
+                {
+                    "type": "text",
+                    "text": "Think step by step. You must respond strictly in JSON format following this schema:{   \"thought\": \"<your reasoning>\", \"answer\": \"<yes/no/unknown>\" } "
+                }
+            ]
+        }
+    ]
+}

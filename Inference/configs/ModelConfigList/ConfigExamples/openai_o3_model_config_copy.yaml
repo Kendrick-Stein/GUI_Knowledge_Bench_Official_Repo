@@ -1,0 +1,28 @@
+KnowledgeBenchDir: '../KnowledgeBench'
+ModelName: 'o3'
+Engine: 'deerapi_gpt' # service provider
+ResultsDir: '../FINAL_RESULT/InstructionUnderstanding/noKnowledge'  # dir to save the results
+thinking: true # enable thikning or not
+MaxWorker: 10 # max concurrent works for 
+
+kwargs:
+  max_tokens: 4096
+  # frequency_penalty: 1 o3 doesn't support frequency_penalty
+  temperature: 0
+  # top_p: 0.9 o3 doesn't support top p
+
+ablation_options:
+  visual_prompt: true # default set it to true 
+  knowledge_prompt: false
+
+TestingScope: # the testing scope of knowledge
+  InterfacePerception:
+    StateInformationUnderstanding: true
+    LayoutSemanticsUnderstanding: true
+    WidgetFunctionUnderstanding: true
+  InteractionPrediction:
+    ActionPrediction: true
+    ActionEffect: true
+  InstructionUnderstanding: 
+    GoalInterpretation: true
+    TaskPlanning: true

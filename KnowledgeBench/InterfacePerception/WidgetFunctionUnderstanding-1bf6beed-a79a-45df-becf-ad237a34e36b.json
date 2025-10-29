@@ -1,0 +1,75 @@
+{
+    "question_id": "WidgetFunctionUnderstanding-1bf6beed-a79a-45df-becf-ad237a34e36b",
+    "knowledge": {
+        "knowledge_type": "InterfacePerception",
+        "knowledge_sub_type": "WidgetFunctionUnderstanding"
+    },
+    "question_type": "multiple_choice",
+    "question_text": "What happens if you click the third control from the left in the video player's bottom bar?",
+    "question_image_dir_list": [
+        "WidgetFunctionUnderstanding-1bf6beed-a79a-45df-becf-ad237a34e36b_question_0.png"
+    ],
+    "option_text": [
+        "Mute the corrent video. ",
+        "The video enlarges within the page while surrounding panels remain visible.",
+        "A control menu opens to adjust captions, quality, playback speed, and more.",
+        "The video expands to full screen, hiding the browser and page elements."
+    ],
+    "app_type": "Google Chrome",
+    "os_type": "Windows",
+    "needed_knowledge": "On YouTube, the rightmost bottom-bar controls are ordered Full screen (far right), Theater mode, then Mini player. Activating the Mini player shrinks the video to a small docked player at the bottom-right while you browse.",
+    "annotation": {
+        "bbox": [
+            195,
+            1217,
+            262,
+            1266
+        ]
+    },
+    "augmented_question": "What happens when you click the control enclosed by the red bounding box on the video player’s bottom bar?",
+    "groundtruth": "A",
+    "messages": [
+        {
+            "role": "system",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "You are a Graphical User Interface (GUI) agent. You will be given a screenshot, a question, and corresponding options. You need to choose one option as your answer.\n"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "image",
+                    "image_url": "WidgetFunctionUnderstanding-1bf6beed-a79a-45df-becf-ad237a34e36b.png"
+                },
+                {
+                    "type": "text",
+                    "text": "What happens when you click the control enclosed by the red bounding box on the video player’s bottom bar? \n"
+                },
+                {
+                    "type": "text",
+                    "text": "A. Mute the corrent video. \n"
+                },
+                {
+                    "type": "text",
+                    "text": "B. A control menu opens to adjust captions, quality, playback speed, and more.\n"
+                },
+                {
+                    "type": "text",
+                    "text": "C. The video expands to full screen, hiding the browser and page elements.\n"
+                },
+                {
+                    "type": "text",
+                    "text": "D. The video enlarges within the page while surrounding panels remain visible.\n"
+                },
+                {
+                    "type": "text",
+                    "text": "Which of the above options are correct according to the screenshot? Think step by step. You must respond strictly in JSON format following this schema: {\"thought\": \"<your reasoning>\", \"answer\": \"<A/B/C/D>\" } "
+                }
+            ]
+        }
+    ]
+}
