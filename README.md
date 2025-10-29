@@ -2,6 +2,7 @@
 
 > 🧭 Hierarchical Evaluation Toolkit for Multimodal GUI Understanding  
 > 📊 Evaluation Data: [Hugging Face Dataset](https://huggingface.co/datasets/KendrickShi/GUI-Knowledge-Bench)  
+> 🕸️ Website: [web](https://kendrick-stein.github.io/GUI-Knowledge-Bench-web/)  
 > 🌍 Switch between **English** / **中文** by expanding the sections below.
 
 ---
